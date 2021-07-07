@@ -94,3 +94,4 @@ profile
 # ========================================= #
 **/Pods
 **/Frameworks/*
+/Resources
