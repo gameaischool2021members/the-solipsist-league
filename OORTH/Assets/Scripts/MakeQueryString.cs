@@ -21,8 +21,17 @@ namespace Fungus {
 		[Tooltip("Number of entries to include.")]
 		[SerializeField] protected int numEntries;
 
+		[Tooltip("The prefix to append at the start.")]
+		[SerializeField] protected string prefix;
+
 		[Tooltip("The postfix to append at the end.")]
 		[SerializeField] protected string postfix;
+
+		[Tooltip("The stop sequence.")]
+		[SerializeField] protected string stopSequence;
+
+		[Tooltip("The stop sequence trigger (a name).")]
+		[SerializeField] protected string stopSequenceTrigger;
 
 		#region Public members
 
@@ -43,12 +52,16 @@ namespace Fungus {
 			for (int i = skip; i < count; ++i) {
 				if (entries[i].name != null && entries[i].name.Length > 0) cleanedString += entries[i].name + ": ";
 				cleanedString += entries[i].text + "\n";
+
+                if (entries[i].name == stopSequenceTrigger) cleanedString += stopSequence + "\n";
 			}
 
-			queryString.Value = cleanedString + postfix;
+			queryString.Value = "";
 
-			// Debug.Log("Query string: " + queryString.Value);
-			// Debug.Log("History length: " + count);
+			if (prefix.Length > 0) queryString.Value += prefix + "\n\n";
+            if (stopSequence.Length > 0) queryString.Value += stopSequence + "\n";
+
+			queryString.Value += cleanedString + postfix;
 
 			Continue();
 		}

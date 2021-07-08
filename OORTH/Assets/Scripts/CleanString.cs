@@ -28,6 +28,9 @@ namespace Fungus {
 		[VariableProperty(typeof(StringVariable))]
 		[SerializeField] protected StringVariable cleanString;
 
+		[Tooltip("Restrict to a single sentence?")]
+		[SerializeField] protected bool singleSentence = false;
+
 		#region Public members
 
 		public override void OnEnter() {
@@ -37,12 +40,12 @@ namespace Fungus {
 				return;
 			}
 
-			List<char> charsToRemove = new List<char>() { '@', '\\', '"' };
+			List<char> charsToRemove = new List<char>() { '@', '"' };
 
 			string cleanedString = cleanString.Value;
 
 			cleanedString.Trim();
-			cleanedString.Replace("\\\\\\\\", " ");
+			// cleanedString.Replace("\\\\\\\\", " ");
 			cleanedString.Replace("  ", " ");
 			cleanedString = cleanedString.Filter(charsToRemove);
 
@@ -64,6 +67,21 @@ namespace Fungus {
 			}
 			foreach (int i in punctuationIndices) {
 				cleanedString.Insert(i + 1, " ");
+			}
+
+			// cut off multi-line returns
+			if (cleanedString.Contains("\n\n")) {
+				index = cleanedString.IndexOf("\n\n");
+				cleanedString = cleanedString.Remove(index);
+			}
+			// cut off \\\\\\
+			if (cleanedString.Contains("\\")) {
+				index = cleanedString.IndexOf("\\");
+				cleanedString = cleanedString.Remove(index);
+			}
+			if (singleSentence && cleanedString.Contains(".")) {
+				index = cleanedString.IndexOf(".");
+				cleanedString = cleanedString.Remove(index);
 			}
 
 			// append ellipsis if unfinished sentence

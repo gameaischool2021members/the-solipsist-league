@@ -62,7 +62,6 @@ namespace OpenAi.Unity.V1 {
 				onResponse(result.Result.choices[0].text);
 
 				Debug.Log("Received " + result.Result.choices.Length + " completions:");
-
                 foreach (var completion in result.Result.choices) {
 					Debug.Log("\t"+completion.text);
                     Debug.Log("\t---");
