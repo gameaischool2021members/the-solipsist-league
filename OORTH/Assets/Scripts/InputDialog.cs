@@ -11,6 +11,8 @@ public class InputDialog : MonoBehaviour {
 	public InputField inputField;
 	public Text Label;
 	public Button SubmitButton;
+	public Text progressText;
+	public int limit = 70;
 
 	protected Action<string> Callback;
 
@@ -56,7 +58,12 @@ public class InputDialog : MonoBehaviour {
 
 		if (inputField != null) {
 			inputField.onEndEdit.RemoveAllListeners();
+			inputField.onValueChanged.RemoveAllListeners();
 			inputField.text = "";
+		}
+
+        if (progressText != null) {
+			progressText.text = "0/" + limit;
 		}
 	}
 
@@ -78,6 +85,7 @@ public class InputDialog : MonoBehaviour {
 			}
 
 			inputField.onEndEdit.AddListener(OnEndEdit);
+			inputField.onValueChanged.AddListener(OnValueChanged);
 		}
 
 		if (Label != null) {
@@ -91,8 +99,15 @@ public class InputDialog : MonoBehaviour {
 		HideSayDialog();
 	}
 
+	public void OnValueChanged(string text) {
+		string progress = text.Length + "/" + limit;
+		if (progressText != null) {
+			progressText.text = progress;
+		}
+	}
+
 	public virtual void OnEndEdit(string inputValue) {
-		if (!Input.GetKey(KeyCode.Return)) {
+		if (!Input.GetKey(KeyCode.Return) || (inputField.text.Length > limit)) {
 			inputField.ActivateInputField();
 			inputField.Select();
 
