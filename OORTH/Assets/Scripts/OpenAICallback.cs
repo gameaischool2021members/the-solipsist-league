@@ -8,7 +8,7 @@ namespace Fungus {
 	/// <summary>
 	/// Sends a prompt and waits for 1 completion.
 	/// </summary>
-	[CommandInfo("Scripting",
+	[CommandInfo("AI",
 				 "Query OpenAI",
 				 "Sends a prompt and waits for 1 completion.")]
 	[AddComponentMenu("")]

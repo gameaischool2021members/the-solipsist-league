@@ -14,6 +14,11 @@ public class InputDialog : MonoBehaviour {
 	public Text progressText;
 	public int limit = 70;
 
+	public Color validColour = Color.white;
+	private Color defaultColour;
+
+	public bool mustBeQuestion = false;
+
 	protected Action<string> Callback;
 
 	public static InputDialog GetInputDialog() {
@@ -40,7 +45,7 @@ public class InputDialog : MonoBehaviour {
 	}
 
 	public virtual void Awake() {
-
+		defaultColour = inputField.textComponent.color;
 		if (Application.isPlaying) {
 			Clear();
 		}
@@ -60,6 +65,7 @@ public class InputDialog : MonoBehaviour {
 			inputField.onEndEdit.RemoveAllListeners();
 			inputField.onValueChanged.RemoveAllListeners();
 			inputField.text = "";
+			inputField.textComponent.color = defaultColour;
 		}
 
         if (progressText != null) {
@@ -99,15 +105,24 @@ public class InputDialog : MonoBehaviour {
 		HideSayDialog();
 	}
 
+	public bool isValid(string text) {
+        // true if it doesn't have to be a question or if it ends with a question mark. and if below limit.
+		return text.Length > 0 && (!mustBeQuestion || text.LastIndexOf('?') == text.Length - 1) && text.Length <= limit;
+	}
+
 	public void OnValueChanged(string text) {
 		string progress = text.Length + "/" + limit;
 		if (progressText != null) {
 			progressText.text = progress;
 		}
+
+		if (inputField != null) {
+			inputField.textComponent.color = isValid(text) ? validColour : defaultColour;
+		}
 	}
 
 	public virtual void OnEndEdit(string inputValue) {
-		if (!Input.GetKey(KeyCode.Return) || (inputField.text.Length > limit)) {
+		if (!Input.GetKey(KeyCode.Return) || !isValid(inputValue)) {
 			inputField.ActivateInputField();
 			inputField.Select();
 
