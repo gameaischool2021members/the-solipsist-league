@@ -52,6 +52,9 @@ namespace OpenAi.Unity.V1 {
 				new CompletionRequestV1() { max_tokens = 64 } :
 				Args.AsCompletionRequest();
 
+			Debug.Log("Sending prompt:");
+			Debug.Log(prompt);
+
 			request.prompt = prompt;
 			// request.n = 2;
 			return _engine.Completions.CreateCompletionCoroutine(this, request, (r) => HandleResponse(r, onResponse, onError));

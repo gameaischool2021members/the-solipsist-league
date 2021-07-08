@@ -57,9 +57,11 @@ namespace Fungus {
 			}
 
 			queryString.Value = "";
-
-			if (prefix.Length > 0) queryString.Value += prefix + "\n\n";
-            if (stopSequence.Length > 0) queryString.Value += stopSequence + "\n";
+			if (prefix.Length > 0) {
+				queryString.Value += prefix + "\n\n";
+				if (stopSequence.Length > 0) 
+                    queryString.Value += stopSequence + "\n";
+			}
 
 			queryString.Value += cleanedString + postfix;
 

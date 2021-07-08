@@ -569,6 +569,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5161319371604368431, guid: d39689ed143734f68a8fe6d67254141f,
+        type: 3}
+      propertyPath: Engine
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7591154358480721559, guid: d39689ed143734f68a8fe6d67254141f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7684,8 +7689,11 @@ MonoBehaviour:
   itemId: 171
   indentLevel: 0
   queryString: {fileID: 1390555326}
-  numEntries: 6
-  prefix: 
+  numEntries: 7
+  prefix: I am a highly intelligent detective who answers questions. If you ask me
+    a question that is evocative and has to do with murder, I will give you the answer.
+    If you ask me a question that is nonsense, trickery, or has no clear answer,
+    I will respond with "That's an interesting question, Watson.".
   postfix: 'Mr. Holmes:'
   stopSequence: '###'
   stopSequenceTrigger: Mr. Holmes
@@ -7705,7 +7713,7 @@ MonoBehaviour:
   indentLevel: 0
   musicClip: {fileID: 8300000, guid: e8e6cf11d7b1b4636b9926d9975df68d, type: 3}
   atTime: 0
-  loop: 1
+  loop: 0
   fadeDuration: 1
 --- !u!114 &1390555360
 MonoBehaviour:
