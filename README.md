@@ -14,4 +14,4 @@ Dependent on [Unitilities](https://github.com/martinpi/Unitilities) and [GPT-3 A
 
 Contains some good prompt-wrangling and response-cleaning nodes for Fungus.
 
-![gameplay video](https://drive.google.com/file/d/1rtcGamPGuCr_ZkoC9_bsjl_iqIr5WJgI/view?usp=sharing)
+[Watch a gameplay video!](https://drive.google.com/file/d/1rtcGamPGuCr_ZkoC9_bsjl_iqIr5WJgI/view?usp=sharing)
