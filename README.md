@@ -10,6 +10,8 @@ Made with [Fungus](http://fungusgames.com/) in Unity. Powered by [GPT-3](https:/
 
 Dependent on [Unitilities](https://github.com/martinpi/Unitilities) and [GPT-3 API access](https://openai.com/blog/openai-api/) so won't compile or run as is.
 
+Contains some good prompt-wrangling and response-cleaning nodes for Fungus.
+
 The Solipsist League is:
-[Martin Pichlmair](http://vertical-progress.net), [@martinpi]:(http://twitter.com/martinpi)
+[Martin Pichlmair](http://twitter.com/martinpi)
 
