@@ -13,4 +13,3 @@ Dependent on [Unitilities](https://github.com/martinpi/Unitilities) and [GPT-3 A
 The Solipsist League is:
 [Martin Pichlmair](http://vertical-progress.net), [@martinpi]:(http://twitter.com/martinpi)
 
-* as in: based on a Conan Doyle story that is in public domain.
