@@ -5789,24 +5789,11 @@ GameObject:
   - component: {fileID: 1390555347}
   - component: {fileID: 1390555344}
   - component: {fileID: 1390555324}
-  - component: {fileID: 1390555323}
-  - component: {fileID: 1390555322}
-  - component: {fileID: 1390555321}
-  - component: {fileID: 1390555320}
   - component: {fileID: 1390555319}
   - component: {fileID: 1390555318}
   - component: {fileID: 1390555317}
   - component: {fileID: 1390555316}
-  - component: {fileID: 1390555315}
-  - component: {fileID: 1390555314}
-  - component: {fileID: 1390555313}
-  - component: {fileID: 1390555312}
-  - component: {fileID: 1390555311}
-  - component: {fileID: 1390555310}
-  - component: {fileID: 1390555309}
-  - component: {fileID: 1390555308}
   - component: {fileID: 1390555306}
-  - component: {fileID: 1390555305}
   - component: {fileID: 1390555304}
   - component: {fileID: 1390555303}
   - component: {fileID: 1390555302}
@@ -5972,9 +5959,9 @@ MonoBehaviour:
     width: 5969.446
     height: 2818.8503
   selectedBlocks:
-  - {fileID: 1390555328}
+  - {fileID: 1390555352}
   selectedCommands:
-  - {fileID: 1390555358}
+  - {fileID: 1390555303}
   variables:
   - {fileID: 1390555396}
   - {fileID: 1390555326}
@@ -6129,7 +6116,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 164
   indentLevel: 0
-  storyText: The Colonel was found dead in a locked room.
+  storyText: The Colonel was found dead two days ago. The injury from which the unfortunate
+    veteran was suffering was found to be a jagged cut some two inches long at the
+    back part of his head.
   description: 
   character: {fileID: 137130844}
   portrait: {fileID: 0}
@@ -6186,9 +6175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 162
   indentLevel: 0
-  storyText: That was the state of things, Watson, when upon the Tuesday morning
-    I, at the request of Major Murphy, went down to Aldershot to supplement the efforts
-    of the police.
+  storyText: These are the facts of the case. Do you have any questions, Watson?
   description: 
   character: {fileID: 137130844}
   portrait: {fileID: 0}
@@ -6229,35 +6216,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 236042671}
---- !u!114 &1390555305
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 160
-  indentLevel: 0
-  storyText: The injury from which the unfortunate veteran was suffering was found
-    to be a jagged cut some two inches long at the back part of his head, which had
-    evidently been caused by a violent blow from a blunt weapon.
-  description: 
-  character: {fileID: 137130844}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
 --- !u!114 &1390555306
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6272,8 +6230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 0
-  storyText: It is the supposed murder of Colonel Barclay, of the Royal Munsters,
-    at Aldershot, which I am investigating.
+  storyText: Thank you, Watson! It is the supposed murder of Colonel Barclay, of
+    the Royal Munsters, at Aldershot, which I am investigating.
   description: 
   character: {fileID: 137130844}
   portrait: {fileID: 0}
@@ -6313,237 +6271,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 1390555335}
   suppressAllAutoSelections: 0
---- !u!114 &1390555308
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 158
-  indentLevel: 0
-  storyText: I have heard nothing of it.
-  description: 
-  character: {fileID: 1880195408}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
---- !u!114 &1390555309
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 157
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1880195408}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 267c50c3c26c7e24fa27aece06aad7cd, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 1276068064}
-  facing: 2
-  useDefaultSettings: 1
-  fadeDuration: 0
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
---- !u!114 &1390555310
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 156
-  indentLevel: 0
-  storyText: I will compress the story as far as may be done without omitting anything
-    vital to the case.  It is conceivable that you may even have read some account
-    of the matter.
-  description: 
-  character: {fileID: 137130844}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
---- !u!114 &1390555311
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 155
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 137130844}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a3710c5af5b436a46b8d0ff4235d1dfe, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 1
-  useDefaultSettings: 1
-  fadeDuration: 0
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
---- !u!114 &1390555312
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 154
-  indentLevel: 0
-  storyText: Can I ask you a question?
-  description: 
-  character: {fileID: 1880195408}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
---- !u!114 &1390555313
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 153
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1880195408}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 59d7c816c1cfb9944b5a28dfbbfe2109, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 1276068064}
-  facing: 2
-  useDefaultSettings: 1
-  fadeDuration: 0
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
---- !u!114 &1390555314
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 152
-  indentLevel: 0
-  storyText: Please, Watson, ask as many as you like. I will answer them to the best
-    of my abilities.
-  description: 
-  character: {fileID: 137130844}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
---- !u!114 &1390555315
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 151
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 137130844}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 96ca91f43a9c1f74b970b59f46047e74, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 1
-  useDefaultSettings: 1
-  fadeDuration: 0
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
 --- !u!114 &1390555316
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6660,121 +6387,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 236042671}
---- !u!114 &1390555320
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 146
-  indentLevel: 0
-  storyText: I was sleepy before you came. I am quite wakeful now.
-  description: 
-  character: {fileID: 1880195408}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
---- !u!114 &1390555321
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 145
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1880195408}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 3bcfc8e7b3c790e45b57cc6db1526225, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 1276068064}
-  facing: 2
-  useDefaultSettings: 1
-  fadeDuration: 0
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
---- !u!114 &1390555322
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 141
-  indentLevel: 0
-  storyText: Then, if you are not too sleepy, I will give you a sketch of what has
-    happened, and of what remains to be done.
-  description: 
-  character: {fileID: 137130844}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 236042671}
---- !u!114 &1390555323
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390555290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 140
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 137130844}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 7add35a7d20a5ee41b0bfde9052ddfd6, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 1
-  useDefaultSettings: 1
-  fadeDuration: 0
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
 --- !u!114 &1390555324
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7510,25 +7122,12 @@ MonoBehaviour:
   - {fileID: 1390555347}
   - {fileID: 1390555344}
   - {fileID: 1390555324}
-  - {fileID: 1390555323}
-  - {fileID: 1390555322}
-  - {fileID: 1390555321}
-  - {fileID: 1390555320}
-  - {fileID: 1390555311}
-  - {fileID: 1390555310}
   - {fileID: 1390555355}
   - {fileID: 1390555306}
-  - {fileID: 1390555309}
-  - {fileID: 1390555308}
   - {fileID: 1390555302}
   - {fileID: 1390555301}
-  - {fileID: 1390555305}
   - {fileID: 1390555304}
   - {fileID: 1390555303}
-  - {fileID: 1390555313}
-  - {fileID: 1390555312}
-  - {fileID: 1390555315}
-  - {fileID: 1390555314}
   - {fileID: 1390555368}
   - {fileID: 1390555367}
   - {fileID: 1390555365}
@@ -7697,6 +7296,14 @@ MonoBehaviour:
   postfix: 'Mr. Holmes:'
   stopSequence: '###'
   stopSequenceTrigger: Mr. Holmes
+  randomFacts:
+  - I know that the butler, Mr. Tullamore, is the murderer.
+  - I know that the butler, Mr. Tullamore, had an affair with Colonel Barclay's wife
+    Nancy.
+  - I know that the murder weapon had traces of motor grease on it.
+  - I know that Colonel Barclay caught the butler, Mr. Tullamore, in flagrante delicto
+    with his wife Nancy.
+  - I know that Colonel Barclay is the murder victim.
 --- !u!114 &1390555359
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -1,7 +1,7 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
+using Unitilities;
 
 public static class Extensions {
 	public static string Filter(this string str, List<char> charsToRemove) {
@@ -11,7 +11,19 @@ public static class Extensions {
 
 		return str;
 	}
+
+	public static List<int> AllIndicesOf(this string str, string value) {
+		List<int> indices = new List<int>();
+		for (int index = 0; ; index += value.Length) {
+			index = str.IndexOf(value, index);
+			if (index < 0)
+				return indices;
+			indices.Add(index);
+		}
+	}
 }
+
+
 
 namespace Fungus {
 	/// <summary>
@@ -33,6 +45,27 @@ namespace Fungus {
 
 		#region Public members
 
+		public int dotFinder(string text) {
+			List<int> indices = text.AllIndicesOf(".");
+			if (indices.Count == 0) return -1;
+			for (int i = indices[indices.Count - 1]; i >= 0; --i) {
+				int startIndex = Mathi.Max(i - 2, 0);
+				string substring = text.Substring(startIndex, i - startIndex);
+				if (substring == "Mr" || substring == "Ms" || substring == "Dr" || substring == "Hr") continue;
+
+				startIndex = Mathi.Max(i - 3, 0);
+				substring = text.Substring(startIndex, i - startIndex);
+				if (substring == "Mrs") continue;
+
+				startIndex = Mathi.Max(i - 4, 0);
+				substring = text.Substring(startIndex, i - startIndex);
+				if (substring == "Prof") continue;
+
+				return i;
+			}
+			return -1;
+		}
+
 		public override void OnEnter() {
 
 			if (cleanString == null || cleanString.Value.Length == 0) {
@@ -49,9 +82,8 @@ namespace Fungus {
 			cleanedString.Replace("  ", " ");
 			cleanedString = cleanedString.Filter(charsToRemove);
 
-			// cut everything past last period
-			int lastIndex = cleanedString.LastIndexOf('.');
-
+			// cut everything past last period that is not part of Mr., Ms.. ...
+			int lastIndex = dotFinder(cleanedString);
 			if (lastIndex >= 0 && lastIndex < cleanedString.Length - 1) {
 				cleanedString = cleanedString.Remove(lastIndex + 1);
 			}

@@ -33,6 +33,9 @@ namespace Fungus {
 		[Tooltip("The stop sequence trigger (a name).")]
 		[SerializeField] protected string stopSequenceTrigger;
 
+		[Tooltip("Facts about the story that get randomly injected into the prompt.")]
+		[SerializeField] protected string[] randomFacts;
+
 		#region Public members
 
 		public override void OnEnter() {
@@ -56,9 +59,14 @@ namespace Fungus {
                 if (entries[i].name == stopSequenceTrigger) cleanedString += stopSequence + "\n";
 			}
 
+			string prefixPlus = prefix;
+			if (randomFacts.Length > 0) {
+				prefixPlus += randomFacts[Mathi.RandomBetween(0, randomFacts.Length - 1)];
+			}
+
 			queryString.Value = "";
-			if (prefix.Length > 0) {
-				queryString.Value += prefix + "\n\n";
+			if (prefixPlus.Length > 0) {
+				queryString.Value += prefixPlus + "\n\n";
 				if (stopSequence.Length > 0) 
                     queryString.Value += stopSequence + "\n";
 			}

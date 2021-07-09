@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SherlockCompletionArgs
   m_EditorClassIdentifier: 
   max_tokens: 24
-  temperature: 0.5
-  top_p: 0.8
+  temperature: 1
+  top_p: 0.6
   stop: '###'
-  presences_penalty: 0.08
-  frequency_penalty: 0.04
+  presences_penalty: 0.2
+  frequency_penalty: 0.045
