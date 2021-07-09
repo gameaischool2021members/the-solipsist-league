@@ -2,7 +2,7 @@
 
 An AI-powered detective adventure starring Sherlock Holmes and Dr. Watson based on a true* case.
 
-![Screenshot](https://github.com/gameaischool2021members/the-solipsist-league/blob/4a8af53df42938f8f89a16b61049b1845f6d3805/Documentation/Screenshot%202021-07-07%20at%2018.38.34.png)
+![Screenshot](https://github.com/gameaischool2021members/the-solipsist-league/blob/28818b0fcb5eb0deb6d62f3fa78bc754f7170364/Documentation/Screenshot%202021-07-08%20at%2017.32.14.png)
 
 Colonel Barclay, a veteran of the Munster Regiment, was murdered in a locked room. Can you, as Dr. Watson, ask Sherlock Holmes the right questions to find out who killed Colonel Barclay?
 
