@@ -6073,9 +6073,9 @@ MonoBehaviour:
     width: 5969.446
     height: 2818.8503
   selectedBlocks:
-  - {fileID: 1390555307}
+  - {fileID: 1390555328}
   selectedCommands:
-  - {fileID: 1390555335}
+  - {fileID: 1390555359}
   variables:
   - {fileID: 1390555326}
   - {fileID: 1390555297}
@@ -6481,7 +6481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 216
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 3e4c5521e850542cd84e320e2d6034eb, type: 3}
+  musicClip: {fileID: 8300000, guid: d76796a10058542a5840c63c6677ee96, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 0.5
@@ -7955,10 +7955,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 172
   indentLevel: 0
-  musicClip: {fileID: 8300000, guid: e8e6cf11d7b1b4636b9926d9975df68d, type: 3}
+  musicClip: {fileID: 8300000, guid: 5983bacecb91646b7a3a8511d21d5818, type: 3}
   atTime: 0
   loop: 0
-  fadeDuration: 8
+  fadeDuration: 1
 --- !u!114 &1390555360
 MonoBehaviour:
   m_ObjectHideFlags: 2
