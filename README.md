@@ -1,6 +1,6 @@
 # Solve it, Watson!
 
-An AI-powered detective adventure starring Sherlock Holmes and Dr. Watson based on a true* case.
+An AI-powered detective adventure starring Dr. Watson, asking the questions, and Sherlock Holmes, answering them with facts about the case.
 
 ![Screenshot](https://github.com/gameaischool2021members/the-solipsist-league/blob/28818b0fcb5eb0deb6d62f3fa78bc754f7170364/Documentation/Screenshot%202021-07-08%20at%2017.32.14.png)
 
